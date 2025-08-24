@@ -39,7 +39,6 @@ export default function NotificationModal({ onClose }: NotificationModalProps) {
         type: 'success'
       });
       
-      // Clear form and close modal after 2 seconds
       setTimeout(() => {
         setEmail('');
         setPhone('');
