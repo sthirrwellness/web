@@ -12,7 +12,7 @@ export default function WellnessLandingPage() {
       style={{ backgroundImage: "url('/images/background.svg')" }}
     >
       {/* Logo in the top right corner */}
-      <header className="absolute top-8 right-8 z-10">
+      <header className="absolute top-8 right-0 left-0 mx-auto w-fit z-10 md:right-8 md:left-auto">
         <Image
           src="/images/logo.svg"
           alt="Sthirr Wellness Logo"
