@@ -7,7 +7,7 @@ import { Metadata } from "next";
 // 2. Configure the sans-serif font (Poppins)
 const poppins = Poppins({ 
   subsets: ["latin"],
-  weight: ['400', '500', '700'], // Include weights you'll use
+  weight: ['300','400', '500', '700'], // Include weights you'll use
   variable: '--font-poppins' 
 });
 
