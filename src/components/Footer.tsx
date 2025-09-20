@@ -2,6 +2,7 @@
 
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { MdPhone, MdLocationOn, MdEmail } from "react-icons/md";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -11,7 +12,7 @@ export default function Footer() {
         <div>
           <div className="flex items-center space-x-2 mb-4">
             {/* Replace with your logo */}
-            <img src="/logo.png" alt="Sthirr Logo" className="h-10 w-10" />
+            <Image src="/logo.png" alt="Sthirr Logo" width={100} height={100} />
             <span className="text-lg font-semibold tracking-wide">
               STHIRR WELLNESS
             </span>

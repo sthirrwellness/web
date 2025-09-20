@@ -1,7 +1,7 @@
-import Navbar from '../../components/Navbar';
 import Head from 'next/head';
+import Navbar from './Navbar';
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Head>
@@ -10,7 +10,6 @@ const Layout = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="min-h-screen flex flex-col">
-        <Navbar />
         <main className="flex-grow pt-16">
           {children}
         </main>

@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import { FaLeaf, FaHeartbeat, FaBrain, FaHandHoldingHeart } from 'react-icons/fa';
 
 const WhySthirr = () => {
   const services = [
@@ -59,7 +58,7 @@ const WhySthirr = () => {
                   My own journey began with the realization that health cannot be built through just one discipline. Over the years, I explored and trained in yoga, naturopathy, sound healing, preventive nutrition, and life skills — not just as theories, but as practices I lived and experienced deeply. What emerged was a simple truth: balance and steadiness come from integration, not isolation.
                 </p>
                 <p className="text-lg">
-                  This is the foundation of STHIRR Wellness. Here, you won't find quick fixes or rigid routines. Instead, I offer practical tools that are adaptable to your life — whether it's yoga for strength, meditation for calm, diet for healing, or sound therapy for deep release. Each path is unique, yet together they create a rhythm that supports lasting wellbeing.
+                  This is the foundation of STHIRR Wellness. Here, you won&apos;t find quick fixes or rigid routines. Instead, I offer practical tools that are adaptable to your life — whether it&apos;s yoga for strength, meditation for calm, diet for healing, or sound therapy for deep release. Each path is unique, yet together they create a rhythm that supports lasting wellbeing.
                 </p>
               </div>
             </div>

@@ -4,29 +4,25 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-interface NavbarProps {
-  // Add any props here if needed in the future
-}
-
-const Navbar: React.FC<NavbarProps> = () => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const offset = window.scrollY;
-      if (offset > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
+  // useEffect(() => {
+    // const handleScroll = () => {
+    //   const offset = window.scrollY;
+    //   if (offset > 50) {
+    //     setScrolled(true);
+    //   } else {
+    //     setScrolled(false);
+    //   }
+    // };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+    // window.addEventListener('scroll', handleScroll);
+    // return () => {
+      // window.removeEventListener('scroll', handleScroll);
+    // };
+  // }, []);
 
   const menuRef = useRef<HTMLDivElement>(null);
 

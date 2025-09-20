@@ -80,7 +80,7 @@ const TestimonialsSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Don't just take our word for it. Here's what our community members have to say about their STHIRR experience.
+            Don&apos;t just take our word for it. Here&apos;s what our community members have to say about their STHIRR experience.
           </motion.p>
         </div>
 
@@ -97,7 +97,7 @@ const TestimonialsSection = () => {
               <div className="mb-6 text-primary text-4xl opacity-20">
                 <FaQuoteLeft />
               </div>
-              <p className="text-gray-600 mb-6 flex-grow">"{testimonial.quote}"</p>
+              <p className="text-gray-600 mb-6 flex-grow">&quot;{testimonial.quote}&quot;</p>
               <div className="mt-auto">
                 <div className="flex items-center mb-2">
                   {renderStars(testimonial.rating)}
