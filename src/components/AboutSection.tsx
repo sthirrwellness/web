@@ -1,13 +1,14 @@
 import React from 'react';
-// import Image from 'next/image';
+import Image from 'next/image';
+import img from "../../public/images/about.png"
 
 const AboutSection = () => {
   return (
     <>
       {/* About Section */}
-      <section className="py-16 md:py-24" id="about">
+      <section className="bg-white py-16 md:py-24" id="about">
         <div className="container mx-auto px-4">
-          <div className="w-full grid lg:grid-cols-2 gap-8">
+          <div className="w-full grid lg:grid-cols-2 justify-between items-center gap-8">
             <div className="p-8 md:p-12 rounded-lg">
               <h3 className="text-md md:text-md font-serif text-[#424D31] mb-4">
                 Founder, STHIRR Wellness
@@ -32,14 +33,14 @@ const AboutSection = () => {
             </div>
 
             <div className="relative rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
-              {/* <Image
-                src="/images/nishita.jpg"
+              <Image
+                src={img}
                 alt="Nishita - Founder of Sthirr Wellness"
-                width={200}
-                height={200}
-                className="w-full h-auto"
+                // width={"400"}
+                // height={"300"}
+                className="w-3/4 h-3/4 ml-auto"
                 priority
-              /> */}
+              />
             </div>
           </div>
         </div>

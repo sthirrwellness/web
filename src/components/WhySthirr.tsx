@@ -1,29 +1,34 @@
 import React from 'react';
 import Image from 'next/image';
+import img from "../../public/images/why.png";
+import holistic from "../../public/images/holist.png";
+import sust from "../../public/images/sust.png"
+import guidance from "../../public/images/guidance.png";
+import steadness from "../../public/images/steadness.png";
 
 const WhySthirr = () => {
   const services = [
     {
       // icon: <FaLeaf className="text-3xl text-[#424D31] mb-4" />,
-      img: '/images/why-sthirr/1.png',
+      img: holistic,
       title: 'Holistic Wellness',
       description: 'Nurturing body, mind, and spirit as one integrated whole'
     },
     {
       // icon: <FaHeartbeat className="text-3xl text-[#424D31] mb-4" />,
-      img: '/images/why-sthirr/2.png',
+      img: sust,
       title: 'Practical & Sustainable',
       description: 'Tools and practices that fit naturally into your daily life'
     },
     {
       // icon: <FaBrain className="text-3xl text-[#424D31] mb-4" />,
-      img: '/images/why-sthirr/3.png',
+      img: guidance,
       title: 'Personalized Guidance',
       description: 'Customized approaches that honor your unique journey'
     },
     {
       // icon: <FaHandHoldingHeart className="text-3xl text-[#424D31] mb-4" />,
-      img: '/images/why-sthirr/4.png',
+      img: steadness,
       title: 'Steadiness (Sthirr)',
       description: 'Building lasting stability and balance from within'
     }
@@ -34,16 +39,16 @@ const WhySthirr = () => {
       {/* About Section */}
       <section className="py-12 md:py-16 bg-[#F9F8F5]" id="about">
         <div className="container mx-auto px-4">
-          <div className="w-full grid lg:grid-cols-2 gap-8">
+          <div className="w-full grid lg:grid-cols-2 justify-between items-center gap-8">
             <div className="relative rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
-              {/* <Image
-                src="/images/nishita.jpg"
+              <Image
+                src={img}
                 alt="Nishita - Founder of Sthirr Wellness"
                 width={200}
                 height={200}
-                className="w-full h-auto"
+                className="w-3/4 h-auto"
                 priority
-              /> */}
+              />
             </div>
 
             <div className="p-8 md:p-12 rounded-lg">
@@ -78,7 +83,7 @@ const WhySthirr = () => {
                 >
                   <div className="text-center">
                     <div className="inline-block group-hover:text-white text-[#424D31]">
-                      <Image src={service.img} alt={service.title} width={100} height={100} />
+                      <Image src={service.img} alt={service.title} className='w-72' width={100} height={100} />
                     </div>
                     <h3 className="text-xl font-semibold mb-2 group-hover:text-white text-[#424D31]">
                       {service.title}

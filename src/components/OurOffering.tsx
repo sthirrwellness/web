@@ -1,43 +1,49 @@
 'use client';
 
 import Image from 'next/image';
+import meditate from "../../public/images/Yoga and meditation practice.png";
+import sound from "../../public/images/Tibetan singing bowls for sound healing.png";
+import holistic from "../../public/images/Fresh vegetables and healthy nutrition.png";
+import guidance from "../../public/images/Background.png";
+import naturopathy from "../../public/images/Background (1).png";
+import mind from "../../public/images/Background (2).png";
 
 const offerings = [
   {
     title: 'Yoga & Meditation',
     description:
       'Traditional asana practice combined with mindfulness techniques to cultivate physical strength and mental clarity.',
-    image: 'https://source.unsplash.com/400x300/?yoga,meditation',
+    image: meditate
   },
   {
     title: 'Sound Healing',
     description:
       'Therapeutic sound frequencies using singing bowls, gongs, and other instruments to promote deep relaxation and healing.',
-    image: 'https://source.unsplash.com/400x300/?sound,bowl',
+    image: sound,
   },
   {
     title: 'Holistic Nutrition',
     description:
       'Personalized nutrition guidance that considers your unique constitution, lifestyle, and wellness goals.',
-    image: 'https://source.unsplash.com/400x300/?nutrition,green',
+    image: holistic
   },
   {
     title: 'Life Skills Coaching',
     description:
       'Practical guidance for developing resilience, emotional intelligence, and sustainable lifestyle practices.',
-    image: 'https://source.unsplash.com/400x300/?coaching,health',
+    image: guidance
   },
   {
     title: 'Naturopathy',
     description:
       'Natural healing approaches that support your body’s innate ability to heal and maintain optimal health.',
-    image: 'https://source.unsplash.com/400x300/?naturopathy,nature',
+    image: naturopathy
   },
   {
     title: 'Mindfulness Training',
     description:
       'Learn to cultivate present moment awareness and develop a deeper connection with yourself and your surroundings.',
-    image: 'https://source.unsplash.com/400x300/?mindfulness,meditation',
+    image: mind
   },
 ];
 

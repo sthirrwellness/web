@@ -1,11 +1,12 @@
 import Image from "next/image";
+import img from "../../public/images/banner.png"
 
 export default function MainSection() {
     return (
         <main className="relative w-full flex items-center justify-center p-8 bg-brand-bg bg-cover bg-center overflow-hidden min-h-[100vh]"
             style={{ backgroundImage: "url('/images/background.svg')" }}>
             <div className="container p-8 m-auto">
-                <div className="flex flex-col items-center justify-center gap-12 lg:gap-8">
+                <div className="w-full grid lg:grid-cols-2 justify-between items-center gap-8">
 
                     {/* Left Side: Text Content */}
                     <div className="w-full text-center lg:text-left">
@@ -30,13 +31,13 @@ export default function MainSection() {
                     </div>
 
                     {/* Right Side: Vector Illustration */}
-                    <div className="lg:hidden w-full lg:w-1/2 flex justify-center lg:justify-end">
+                    <div className="w-full flex justify-center lg:justify-end">
                         <Image
-                            src="/images/vector.svg"
+                            src={img}
                             alt="A woman stacking balanced stones"
-                            width={500}
-                            height={450}
-                            className="w-full max-w-md"
+                            // width={500}
+                            // height={450}
+                            className="w-3/4 h-3/4"
                             priority
                         />
                     </div>
