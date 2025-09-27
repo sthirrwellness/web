@@ -68,16 +68,16 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/about" className="text-[#CEC2AE] hover:text-[#AD8252] transition-colors font-medium">
+            <Link href="#home" className="text-[#CEC2AE] hover:text-[#AD8252] transition-colors font-medium">
               Home
             </Link>
-            <Link href="/about" className="text-[#CEC2AE] hover:text-[#AD8252] transition-colors font-medium">
+            <Link href="#about" className="text-[#CEC2AE] hover:text-[#AD8252] transition-colors font-medium">
               About
             </Link>
-            <Link href="/services" className="text-[#CEC2AE] hover:text-[#AD8252] transition-colors font-medium">
+            <Link href="#offerings" className="text-[#CEC2AE] hover:text-[#AD8252] transition-colors font-medium">
               Our Offerings
             </Link>
-            <Link href="/contact" className="text-[#CEC2AE] hover:text-[#AD8252] transition-colors font-medium">
+            <Link href="#why-sthirr" className="text-[#CEC2AE] hover:text-[#AD8252] transition-colors font-medium">
               Why Sthirr
             </Link>
             <Link 

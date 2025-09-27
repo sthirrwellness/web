@@ -55,7 +55,7 @@ export default function WellnessPlans() {
     ];
 
     return (
-        <section className="py-20 bg-[#F9F8F5]">
+        <section className="py-20 bg-[#F9F8F5]" id="plans">
             <div className="max-w-6xl mx-auto px-6 text-center">
                 <h2 className="text-3xl font-bold text-gray-900">
                     Choose Your Wellness Journey

@@ -36,8 +36,7 @@ const WhySthirr = () => {
 
   return (
     <>
-      {/* About Section */}
-      <section className="py-12 md:py-16 bg-[#F9F8F5]" id="about">
+      <section className="py-12 md:py-16 bg-[#F9F8F5]" id="why-sthirr">
         <div className="container mx-auto px-4">
           <div className="w-full grid lg:grid-cols-2 justify-between items-center gap-8">
             <div className="relative rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">

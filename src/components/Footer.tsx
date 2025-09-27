@@ -3,19 +3,17 @@
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { MdPhone, MdLocationOn, MdEmail } from "react-icons/md";
 import Image from "next/image";
+import img from "../../public/images/logo-2.svg"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#364230] text-gray-100 py-10">
+    <footer className="bg-[#364230] text-gray-100 py-10" id="footer">
       <div className="container mx-auto px-6 grid md:grid-cols-3 gap-10">
         {/* Left Section */}
         <div>
           <div className="flex items-center space-x-2 mb-4">
             {/* Replace with your logo */}
-            <Image src="/logo.png" alt="Sthirr Logo" width={100} height={100} />
-            <span className="text-lg font-semibold tracking-wide">
-              STHIRR WELLNESS
-            </span>
+            <Image src={img} alt="Sthirr Logo" width={100} height={100} />
           </div>
           <p className="text-sm leading-relaxed mb-4">
             Living with steadiness, awareness, and inner strength through
