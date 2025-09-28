@@ -4,6 +4,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { MdPhone, MdLocationOn, MdEmail } from "react-icons/md";
 import Image from "next/image";
 import img from "../../public/images/logo-2.svg"
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -23,11 +24,11 @@ export default function Footer() {
             <a href="#" className="hover:text-yellow-400">
               <FaFacebookF />
             </a>
-            <a href="#" className="hover:text-yellow-400">
+            <a href="https://www.instagram.com/sthirrwellness/" className="hover:text-yellow-400" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
             <a href="#" className="hover:text-yellow-400">
-              <FaTwitter />
+              <FaXTwitter />
             </a>
           </div>
         </div>
@@ -49,13 +50,13 @@ export default function Footer() {
           <h3 className="font-semibold mb-4">Get In Touch</h3>
           <ul className="space-y-2 text-sm">
             <li className="flex items-center space-x-2">
-              <MdPhone /> <span>+91 8628376769</span>
+              <MdPhone /> <span>+91 8828138999</span>
             </li>
             <li className="flex items-center space-x-2">
-              <MdLocationOn /> <span>Thane & Mumbai</span>
+              <MdLocationOn /> <span>1214 Solus, Hiranandani Estate, Thane</span>
             </li>
             <li className="flex items-center space-x-2">
-              <MdEmail /> <span>hello@sthirr.com</span>
+              <MdEmail /> <span>sthirrwellness@gmail.com</span>
             </li>
           </ul>
         </div>
@@ -65,12 +66,12 @@ export default function Footer() {
       <div className="border-t border-gray-600 mt-10 pt-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 px-6">
         <p>© 2025 Sthirr. All rights reserved.</p>
         <div className="flex space-x-4 mt-2 md:mt-0">
-          <a href="#" className="hover:text-yellow-400">
+          {/* <a href="#" className="hover:text-yellow-400">
             Privacy Policy
           </a>
           <a href="#" className="hover:text-yellow-400">
             Terms of Service
-          </a>
+          </a> */}
         </div>
       </div>
     </footer>
