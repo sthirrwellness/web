@@ -1,6 +1,6 @@
 "use client"
 
-import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { MdPhone, MdLocationOn, MdEmail } from "react-icons/md";
 import Image from "next/image";
 import img from "../../public/images/logo-2.svg"
