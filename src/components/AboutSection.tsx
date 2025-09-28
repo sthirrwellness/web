@@ -8,12 +8,12 @@ const AboutSection = () => {
       {/* About Section */}
       <section className="bg-white py-16 md:py-24" id="about">
         <div className="container mx-auto px-4">
-          <div className="w-full grid lg:grid-cols-2 justify-between items-center gap-8">
-            <div className="p-8 md:p-12 rounded-lg">
-              <h3 className="text-md md:text-md font-serif text-[#424D31] mb-4">
+          <div className="w-full flex flex-col-reverse lg:flex-row justify-between items-center gap-8">
+            <div className="w-full lg:w-1/2 p-4 lg:p-8 md:p-12 rounded-lg">
+              <h3 className="text-sm lg:text-md md:text-md font-serif text-[#424D31] mb-4">
                 Founder, STHIRR Wellness
               </h3>
-              <h2 className="text-4xl md:text-5xl font-serif text-[#424D31] mb-4">
+              <h2 className="text-3xl lg:text-4xl md:text-5xl font-serif text-[#424D31] mb-4">
                 About Me - Nishita
               </h2>
               <div className="space-y-6 text-gray-700 leading-relaxed  mt-12">
@@ -32,13 +32,13 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <div className="relative rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
+            <div className="relative w-full lg:w-1/2 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
               <Image
                 src={img}
                 alt="Nishita - Founder of Sthirr Wellness"
                 // width={"400"}
                 // height={"300"}
-                className="w-3/4 h-3/4 ml-auto"
+                className="lg:w-3/4 lg:h-3/4 m-auto lg:ml-auto"
                 priority
               />
             </div>

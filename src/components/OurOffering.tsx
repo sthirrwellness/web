@@ -50,9 +50,9 @@ const offerings = [
 export default function OurOfferings() {
   return (
     <section className="py-16 bg-gray-50" id="offerings">
-      <div className="max-w-6xl mx-auto px-6 text-center">
+      <div className="max-w-6xl mx-auto px-6 text-left lg:text-center">
         <h2 className="text-3xl font-bold text-gray-900">Our Offerings</h2>
-        <p className="mt-4 text-lg not-only:w-1/2 text-[#ACACAC] mx-auto">
+        <p className="mt-4 text-lg lg:not-only:w-3/5 text-[#ACACAC] mx-auto">
           We offer curated services designed to bring overall improvement in health — nurturing the body, calming the mind,
           and creating balance in everyday life.
         </p>

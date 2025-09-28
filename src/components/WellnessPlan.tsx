@@ -81,7 +81,7 @@ export default function WellnessPlans() {
                             with your individual health goals and lifestyle.
                         </p>
                         <button className="mt-5 bg-white text-[#424D31] font-medium px-5 py-2 rounded-full text-sm hover:bg-[#AD8252] hover:text-white transition flex items-center gap-2">
-                            Get Your Custom Plan →
+                            <a href="#contact">Get Your Custom Plan →</a>
                         </button>
                     </div>
 

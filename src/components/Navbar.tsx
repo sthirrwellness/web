@@ -1,53 +1,10 @@
-'use client';
-
-import { useState, useEffect, useRef } from 'react';
+"use client";
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // const [scrolled, setScrolled] = useState(false);
-
-  // useEffect(() => {
-    // const handleScroll = () => {
-    //   const offset = window.scrollY;
-    //   if (offset > 50) {
-    //     setScrolled(true);
-    //   } else {
-    //     setScrolled(false);
-    //   }
-    // };
-
-    // window.addEventListener('scroll', handleScroll);
-    // return () => {
-      // window.removeEventListener('scroll', handleScroll);
-    // };
-  // }, []);
-
-  const menuRef = useRef<HTMLDivElement>(null);
-
-  // Close mobile menu when clicking outside or pressing Escape key
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (isOpen && menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setIsOpen(false);
-      }
-    };
-
-    const handleEscape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape' && isOpen) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    document.addEventListener('keydown', handleEscape);
-    
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-      document.removeEventListener('keydown', handleEscape);
-    };
-  }, [isOpen]);
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 bg-[#424D31] py-4`}>
@@ -110,39 +67,44 @@ const Navbar = () => {
           {/* Mobile Navigation */}
           {isOpen && (
             <div 
-              ref={menuRef}
               className="mobile-menu-container fixed inset-0 bg-[#424D31] z-10 flex flex-col items-center justify-center space-y-8 md:hidden"
               role="dialog"
               aria-modal="true"
               aria-label="Mobile menu"
             >
+              <Link href="#home" 
+                className="text-2xl text-[#CEC2AE] hover:text-[#AD8252] transition-colors font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                Home
+              </Link>
               <Link 
-                href="/about" 
+                href="#about" 
                 className="text-2xl text-[#CEC2AE] hover:text-[#AD8252] transition-colors font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 About
               </Link>
               <Link 
-                href="/services" 
+                href="#offerings" 
                 className="text-2xl text-[#CEC2AE] hover:text-[#AD8252] transition-colors font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                Services
+                Our Offerings
               </Link>
               <Link 
-                href="/contact" 
+                href="#why-sthirr" 
                 className="text-2xl text-[#CEC2AE] hover:text-[#AD8252] transition-colors font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                Contact
+                Why Sthirr
               </Link>
               <Link 
-                href="/book-now" 
+                href="#contact" 
                 className="bg-[#424D31] text-[#CEC2AE] px-8 py-3 border-1 border-[#AD8252] rounded-full hover:bg-[#AD8252] transition-colors font-medium text-lg mt-4"
                 onClick={() => setIsOpen(false)}
               >
-                Book Now
+                Contact
               </Link>
             </div>
           )}

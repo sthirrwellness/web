@@ -3,7 +3,7 @@ import img from "../../public/images/banner.png"
 
 export default function MainSection() {
     return (
-        <main className="relative w-full flex items-center justify-center p-8 bg-brand-bg bg-cover bg-center overflow-hidden min-h-[100vh]"
+        <main className="relative w-full flex items-center justify-center p-4 lg:p-8 bg-brand-bg bg-cover bg-center overflow-hidden min-h-[100vh]"
             id="main-section" style={{ backgroundImage: "url('/images/background.svg')" }}>
             <div className="container p-8 m-auto">
                 <div className="w-full grid lg:grid-cols-2 justify-between items-center gap-8">
@@ -30,7 +30,7 @@ export default function MainSection() {
                     </div>
 
                     {/* Right Side: Vector Illustration */}
-                    <div className="w-full flex justify-center lg:justify-end">
+                    <div className="hidden lg:flex w-full justify-center lg:justify-end">
                         <Image
                             src={img}
                             alt="A woman stacking balanced stones"

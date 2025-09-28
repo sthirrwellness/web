@@ -45,13 +45,13 @@ const WhySthirr = () => {
                 alt="Nishita - Founder of Sthirr Wellness"
                 width={200}
                 height={200}
-                className="w-3/4 h-auto"
+                className="w-full lg:w-3/4 h-auto"
                 priority
               />
             </div>
 
-            <div className="p-8 md:p-12 rounded-lg">
-              <h2 className="text-4xl md:text-5xl font-serif text-[#424D31] mb-4">
+            <div className="p-4 lg:p-8 md:p-12 rounded-lg">
+              <h2 className="text-3xl lg:text-4xl md:text-5xl font-serif text-[#424D31] mb-4">
                 Why Choose Sthirr
               </h2>
               <div className="space-y-6 text-gray-700 leading-relaxed  mt-12">
@@ -72,22 +72,22 @@ const WhySthirr = () => {
 
       {/* Services Section */}
       <section className="bg-[#F9F8F5]">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <div className="text-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className="p-8 rounded-xl"
+                  className="rounded-xl"
                 >
-                  <div className="text-center">
+                  <div className="bg-white rounded-md">
                     <div className="inline-block group-hover:text-white text-[#424D31]">
-                      <Image src={service.img} alt={service.title} className='w-72' width={100} height={100} />
+                      <Image src={service.img} alt={service.title} className='w-72 object-cover' width={100} height={100} />
                     </div>
-                    <h3 className="text-xl font-semibold mb-2 group-hover:text-white text-[#424D31]">
+                    <h3 className="text-xl font-semibold mb-2 group-hover:text-white text-[#424D31] px-2">
                       {service.title}
                     </h3>
-                    <p className="text-gray-600 group-hover:text-gray-200">
+                    <p className="text-gray-600 group-hover:text-gray-200 p-2">
                       {service.description}
                     </p>
                   </div>

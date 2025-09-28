@@ -129,7 +129,7 @@ export default function ContactForm() {
         </form>
 
         {/* Placeholder image / visual */}
-        <div className="flex items-center justify-center">
+        <div className="hidden md:flex items-center justify-center">
           <Image src={img} alt="Contact Us" width={300} height={400} className="w-3/4 h-fit object-cover" />
         </div>
       </div>
