@@ -13,7 +13,6 @@ export default function Footer() {
         {/* Left Section */}
         <div>
           <div className="flex items-center space-x-2 mb-4">
-            {/* Replace with your logo */}
             <Image src={img} alt="Sthirr Logo" width={100} height={100} />
           </div>
           <p className="text-sm leading-relaxed mb-4">
