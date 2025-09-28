@@ -5,7 +5,7 @@ export default function MainSection() {
     return (
         <main className="relative w-full flex items-center justify-center p-4 lg:p-8 bg-brand-bg bg-cover bg-center overflow-hidden min-h-[100vh]"
             id="main-section" style={{ backgroundImage: "url('/images/background.svg')" }}>
-            <div className="container p-8 m-auto">
+            <div className="container lg:p-8 m-auto">
                 <div className="w-full grid lg:grid-cols-2 justify-between items-center gap-8">
 
                     {/* Left Side: Text Content */}

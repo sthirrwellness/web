@@ -74,13 +74,13 @@ const WhySthirr = () => {
       <section className="bg-[#F9F8F5]">
         <div className="container mx-auto">
           <div className="text-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-6">
               {services.map((service, index) => (
                 <div
                   key={index}
                   className="rounded-xl"
                 >
-                  <div className="bg-white rounded-md">
+                  <div className="bg-white rounded-md p-3">
                     <div className="inline-block group-hover:text-white text-[#424D31]">
                       <Image src={service.img} alt={service.title} className='w-72 object-cover' width={100} height={100} />
                     </div>

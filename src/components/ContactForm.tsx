@@ -135,7 +135,7 @@ export default function ContactForm() {
       </div>
 
       {/* Contact Info */}
-      <div className="container mx-auto grid md:grid-cols-3 gap-4 text-center mt-40">
+      <div className="container mx-auto grid md:grid-cols-3 gap-20 md:gap-6 text-center mt-40">
         <div className="bg-[#F9F6F1] p-6 rounded-xl relative">
           <div className="text-xl mb-2 flex justify-center absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <svg className='w-10' width="49" height="65" viewBox="0 0 49 65" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -144,9 +144,7 @@ export default function ContactForm() {
           </div>
           <h4 className="font-semibold text-2xl text-[#424D31] mt-4">Sthirr Wellness</h4>
           <p className="text-sm text-gray-600 mt-2">
-            C 904, Arge Urban Bloom, Yeshwanthpur<br />
-            Bangalore, 560022<br />
-            Near Taj Vivanta
+           1214 Solus, Hiranandani Estate, Thane
           </p>
         </div>
         <div className="bg-[#F9F6F1] p-6 rounded-xl relative">
@@ -155,11 +153,9 @@ export default function ContactForm() {
               <path d="M19.6394 3.74028C19.3202 1.64911 17.4969 0.129718 15.3843 0.183985L5.8024 0.425939C3.90642 0.479346 2.27539 1.78818 1.82393 3.625C-4.38112 28.871 11.0579 54.3725 36.3039 60.5776C38.1407 61.0291 40.0565 60.1906 40.9827 58.5354L45.639 50.1573C46.6664 48.3106 46.1653 45.9908 44.4603 44.7385L35.6672 38.2489C34.1745 37.1462 32.1279 37.1518 30.6516 38.2714L25.2925 42.289C18.9437 37.1251 14.5567 29.8789 12.9243 21.8598L18.9659 18.9838C20.6449 18.1845 21.596 16.384 21.3109 14.5501L19.6369 3.75048L19.6394 3.74028Z" fill="#424D31" />
             </svg>
           </div>
-          <h4 className="font-semibold text-2xl text-[#424D31] mt-4">+91 90196 37045</h4>
+          <h4 className="font-semibold text-2xl text-[#424D31] mt-4">+91 8828138999</h4>
           <p className="text-sm text-gray-600">
-            Operating hours are from<br />
-            9:00 AM to 5:00 PM IST<br />
-            (Monday - Saturday)
+           Your journey to balance starts with a hello!<br />
           </p>
         </div>
         <div className="bg-[#F9F6F1] p-6 rounded-xl relative">
@@ -170,9 +166,7 @@ export default function ContactForm() {
           </div>
           <h4 className="font-semibold text-2xl text-[#424D31] mt-4">Email</h4>
           <p className="text-sm text-gray-600">
-            Have a Question?<br />
-            Email Us Your Query!<br />
-            Sthirrwellness@gmail.com
+            sthirrwellness@gmail.com
           </p>
         </div>
       </div>
