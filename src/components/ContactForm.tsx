@@ -25,10 +25,10 @@ export default function ContactForm() {
     setErrorMsg('');
 
     try {
-      const res = await fetch('/api/notify', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: form.email, phone: form.phone }),
+        body: JSON.stringify({ name: form.name, email: form.email, phone: form.phone, subject: form.subject, message: form.message }),
       });
 
       const data = await res.json();

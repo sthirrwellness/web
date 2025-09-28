@@ -23,9 +23,8 @@ export default function MainSection() {
                             <button
                                 type="button"
                                 className="bg-[#424D31] uppercase text-white px-8 py-3 cursor-pointer rounded-md font-medium tracking-wider hover:bg-opacity-90 transition-colors"
-                            // onClick={() => setIsModalOpen(true)}
                             >
-                                Begin Your Journey
+                                <a href="#plans">Begin Your Journey</a>
                             </button>
                         </div>
                     </div>

@@ -1,10 +1,14 @@
 'use client';
 
+import { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
 import { FiHeart, FiTarget, FiUserCheck } from "react-icons/fi";
+import RegisterModal from "./RegisterModal";
 
 export default function WellnessPlans() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [wellnessPlan, setWellnessPlan] = useState('Sthir Intro Starter');
     const plans = [
         {
             title: 'Sthir Intro Starter',
@@ -76,7 +80,7 @@ export default function WellnessPlans() {
                             We provide fully personalized wellness plans, carefully designed to align
                             with your individual health goals and lifestyle.
                         </p>
-                        <button className="mt-5 bg-white text-[#424D31] font-medium px-5 py-2 rounded-full text-sm hover:bg-[#424D31] transition flex items-center gap-2">
+                        <button className="mt-5 bg-white text-[#424D31] font-medium px-5 py-2 rounded-full text-sm hover:bg-[#AD8252] hover:text-white transition flex items-center gap-2">
                             Get Your Custom Plan →
                         </button>
                     </div>
@@ -170,13 +174,19 @@ export default function WellnessPlans() {
                                 ))}
                             </ul>
 
-                            <button className={`mt-6 w-full  text-white py-2 px-4 rounded-xl transition ${plan.buttonColor} cursor-pointer`}>
+                            <button className={`mt-6 w-full  text-white py-2 px-4 rounded-xl transition ${plan.buttonColor} cursor-pointer`}
+                                onClick={() => {
+                                    setIsModalOpen(true);
+                                    setWellnessPlan(plan.title);
+                                }}
+                            >
                                 {plan.button}
                             </button>
                         </div>
                     ))}
                 </div>
             </div>
+            {isModalOpen && <RegisterModal onClose={() => setIsModalOpen(false)} wellnessPlan={wellnessPlan} />}
         </section>
     );
 }

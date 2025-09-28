@@ -5,7 +5,7 @@ const prisma = new PrismaClient()
 export async function POST(request: Request) {
     try {
         const body = await request.json();
-        const { email, phone, plan } = body;
+        const { name,email, phone, plan } = body;
         
         if (!email) {
           return NextResponse.json(
@@ -23,6 +23,7 @@ export async function POST(request: Request) {
     
         const newUser = await prisma.register.create({
           data: {
+            name: name || null,
             email, 
             phone: phone || null,
             plan: plan || null,
