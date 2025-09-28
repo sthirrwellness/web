@@ -54,7 +54,7 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section id="testimonials" className="py-20 bg-[#F8F6F2]" id="testimonials">
+    <section id="testimonials" className="py-20 bg-[#F8F6F2]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <motion.h2 
